@@ -221,9 +221,9 @@ function goToTestimonial(index) {
         testimonialDots.forEach((dot, i) => {
             if (i === index) {
                 dot.classList.remove('bg-white/20');
-                dot.classList.add('bg-tochi-orange');
+                dot.classList.add('bg-erpa-red');
             } else {
-                dot.classList.remove('bg-tochi-orange');
+                dot.classList.remove('bg-erpa-red');
                 dot.classList.add('bg-white/20');
             }
         });
