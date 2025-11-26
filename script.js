@@ -204,3 +204,35 @@ function triggerEasterEgg() {
         }
     });
 }
+
+// Testimonial Slider
+let currentTestimonial = 0;
+const testimonialTrack = document.getElementById('testimonial-track');
+const testimonialDots = document.querySelectorAll('.testimonial-dot');
+const totalTestimonials = 3;
+
+function goToTestimonial(index) {
+    currentTestimonial = index;
+    if (testimonialTrack) {
+        testimonialTrack.style.transform = `translateX(-${index * 100}%)`;
+
+        // Update dots
+        testimonialDots.forEach((dot, i) => {
+            if (i === index) {
+                dot.classList.remove('bg-white/20');
+                dot.classList.add('bg-tochi-orange');
+            } else {
+                dot.classList.remove('bg-tochi-orange');
+                dot.classList.add('bg-white/20');
+            }
+        });
+    }
+}
+
+// Auto-rotate every 5 seconds
+if (testimonialTrack) {
+    setInterval(() => {
+        currentTestimonial = (currentTestimonial + 1) % totalTestimonials;
+        goToTestimonial(currentTestimonial);
+    }, 5000);
+}
