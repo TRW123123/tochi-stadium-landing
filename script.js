@@ -94,6 +94,15 @@ gsap.utils.toArray(".product-card").forEach((card, i) => {
     );
 });
 
+// Failsafe: Ensure cards are visible after 2s if ScrollTrigger doesn't fire
+setTimeout(() => {
+    document.querySelectorAll('.product-card').forEach(card => {
+        if (getComputedStyle(card).opacity === '0') {
+            gsap.to(card, { opacity: 1, scale: 1, y: 0, duration: 0.8 });
+        }
+    });
+}, 2000);
+
 // Benefits Animation
 gsap.utils.toArray(".benefit-item").forEach((item, i) => {
     gsap.fromTo(item,
