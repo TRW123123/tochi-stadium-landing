@@ -240,3 +240,33 @@ if (testimonialTrack) {
         goToTestimonial(currentTestimonial);
     }, 5000);
 }
+
+// Animated Statistics Counter
+document.querySelectorAll('[data-countup]').forEach(element => {
+    const target = parseInt(element.getAttribute('data-countup'));
+    let hasAnimated = false;
+
+    ScrollTrigger.create({
+        trigger: element,
+        start: 'top 80%',
+        onEnter: () => {
+            if (!hasAnimated) {
+                hasAnimated = true;
+
+                // Animate the number counting up
+                gsap.to(element, {
+                    innerHTML: target,
+                    duration: 2,
+                    ease: 'power1.out',
+                    snap: { innerHTML: 1 },
+                    onUpdate: function () {
+                        element.innerHTML = Math.ceil(element.innerHTML) + '+';
+                    },
+                    onComplete: function () {
+                        element.innerHTML = target + '+';
+                    }
+                });
+            }
+        }
+    });
+});
