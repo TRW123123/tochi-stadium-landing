@@ -1,0 +1,104 @@
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0055FF;
+}
+
+/* Lando Norris / Tech Clip Paths */
+.clip-path-polygon {
+    clip-path: polygon(20px 0, 100% 0,
+            100% calc(100% - 20px),
+            calc(100% - 20px) 100%,
+            0 100%,
+            0 20px);
+    transition: clip-path 0.5s ease;
+}
+
+.clip-path-polygon:hover {
+    clip-path: polygon(0 0, 100% 0,
+            100% 100%,
+            100% 100%,
+            0 100%,
+            0 0);
+}
+
+.clip-path-polygon-rev {
+    clip-path: polygon(0 0, calc(100% - 20px) 0,
+            100% 20px,
+            100% 100%,
+            20px 100%,
+            0 calc(100% - 20px));
+    transition: clip-path 0.5s ease;
+}
+
+.clip-path-polygon-rev:hover {
+    clip-path: polygon(0 0, 100% 0,
+            100% 100%,
+            100% 100%,
+            0 100%,
+            0 0);
+}
+
+/* Glitch Animation */
+@keyframes glitch-anim {
+    0% {
+        letter-spacing: -0.05em;
+        opacity: 0.8;
+    }
+
+    20% {
+        letter-spacing: 0.1em;
+        opacity: 1;
+    }
+
+    40% {
+        letter-spacing: -0.05em;
+        opacity: 0.8;
+    }
+
+    60% {
+        letter-spacing: 0.05em;
+        opacity: 1;
+    }
+
+    80% {
+        letter-spacing: -0.02em;
+        opacity: 0.9;
+    }
+
+    100% {
+        letter-spacing: normal;
+        opacity: 1;
+    }
+}
+
+.glitch-effect {
+    animation: glitch-anim 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/* Neon Glow Utilities */
+.neon-blue {
+    box-shadow: 0 0 10px #0055FF, 0 0 20px #0055FF;
+}
+
+.neon-orange {
+    box-shadow: 0 0 10px #FF6B00, 0 0 20px #FF6B00;
+}
+
+/* Smooth text rendering */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

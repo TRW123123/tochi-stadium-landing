@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOCHI | Stadium Solutions by ERPA Teknoloji</title>
+    <meta name="description"
+        content="Transform your stadium into a digital experience center. TOCHI by ERPA Teknoloji - Professional display solutions since 1995.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        tochi: {
+                            blue: '#0055FF',
+                            orange: '#FF6B00',
+                            dark: '#050505',
+                            gray: '#111111'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Orbitron', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-tochi-dark text-white overflow-x-hidden antialiased selection:bg-tochi-blue selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 px-6 py-4 mix-blend-difference">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-2xl font-display font-bold tracking-tighter text-white">TOCHI</div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide">
+                <a href="#products" class="hover:text-tochi-blue transition-colors">SOLUTIONS</a>
+                <a href="#benefits" class="hover:text-tochi-blue transition-colors">BENEFITS</a>
+                <a href="#cases" class="hover:text-tochi-blue transition-colors">CASES</a>
+                <a href="fenerbahce.html" class="hover:text-tochi-blue transition-colors">FENERBAHÇE</a>
+                <a href="benghazi.html" class="hover:text-tochi-blue transition-colors">BENGHAZI</a>
+                <a href="#contact" class="hover:text-tochi-blue transition-colors">CONTACT</a>
+            </div>
+            <button
+                class="border border-white/20 px-6 py-2 rounded-full text-sm hover:bg-white hover:text-black transition-all duration-300">
+                GET IN TOUCH
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen w-full overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 z-0">
+            <div id="hero-bg" class="w-full h-full bg-cover bg-center scale-110"
+                style="background-image: url('assets/stadium_hero.png');"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-tochi-dark"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+            <h1
+                class="hero-title font-display font-black text-6xl md:text-8xl lg:text-9xl tracking-tighter mb-6 leading-none opacity-0">
+                TOCHI<br>
+                <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400">STADIUM</span>
+            </h1>
+            <p class="hero-subtitle text-xl md:text-2xl text-gray-300 font-light tracking-widest uppercase opacity-0">
+            <h2 class="section-title text-5xl md:text-7xl font-display font-bold mb-4 text-center opacity-0">
+                TOCHI SOLUTIONS
+            </h2>
+            <p class="text-center text-gray-400 mb-20 max-w-3xl mx-auto">
+                Specially designed display technologies for every area, delivering an unforgettable match-day experience
+                for all fans.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product 1: Locker Room Displays -->
+                <div class="product-card group relative overflow-hidden rounded-lg opacity-0">
+                    <div class="aspect-[4/5] bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                        style="background-image: url('https://images.unsplash.com/photo-1577223625816-7546f13df25d?q=80&w=800&auto=format&fit=crop');">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <h3 class="text-2xl font-display font-bold mb-2">LOCKER ROOM<br>DISPLAYS</h3>
+                        <p class="text-sm text-gray-300">Individual player displays with personalized content and team
+                            motivation</p>
+                    </div>
+                </div>
+
+                <!-- Product 2: VIP Seat-Back Displays -->
+                <div class="product-card group relative overflow-hidden rounded-lg opacity-0">
+                    <div class="aspect-[4/5] bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                        style="background-image: url('https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=800&auto=format&fit=crop');">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <h3 class="text-2xl font-display font-bold mb-2">VIP SEAT-BACK<br>DISPLAYS</h3>
+                        <p class="text-sm text-gray-300">Touch-enabled displays with live broadcasts, stats, and
+                            interactive content</p>
+                    </div>
+                </div>
+
+                <!-- Product 3: Videowall Systems -->
+                <div class="product-card group relative overflow-hidden rounded-lg opacity-0">
+                    <div class="aspect-[4/5] bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                        style="background-image: url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=800&auto=format&fit=crop');">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <h3 class="text-2xl font-display font-bold mb-2">VIDEOWALL<br>SYSTEMS</h3>
+                        <p class="text-sm text-gray-300">High-resolution modular displays uniting fans on one screen</p>
+                    </div>
+                </div>
+
+                <!-- Product 4: Digital Signage -->
+                <div class="product-card group relative overflow-hidden rounded-lg opacity-0">
+                    <div class="aspect-[4/5] bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                        style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800&auto=format&fit=crop');">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <h3 class="text-2xl font-display font-bold mb-2">DIGITAL<br>SIGNAGE</h3>
+                        <p class="text-sm text-gray-300">Indoor & outdoor displays with high brightness and exceptional
+                            durability</p>
+                    </div>
+                </div>
+
+                <!-- Product 5: Interactive Totems -->
+                <div class="product-card group relative overflow-hidden rounded-lg opacity-0">
+                    <div class="aspect-[4/5] bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                        style="background-image: url('https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=800&auto=format&fit=crop');">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <h3 class="text-2xl font-display font-bold mb-2">INTERACTIVE<br>TOTEMS</h3>
+                        <p class="text-sm text-gray-300">Fast access for visitors — tickets, navigation, and event
+                            information</p>
+                    </div>
+                </div>
+
+                <!-- Product 6: Digital Menu Boards -->
+                <div class="product-card group relative overflow-hidden rounded-lg opacity-0">
+                    <div class="aspect-[4/5] bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                        style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800&auto=format&fit=crop');">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <h3 class="text-2xl font-display font-bold mb-2">DIGITAL<br>MENU BOARDS</h3>
+                        <p class="text-sm text-gray-300">Dynamic menu content and promotional visuals for VIP zones and
+                            restaurants</p>
+                    </div>
+                </div>
+
+                <!-- Product 7: Wayfinding & Navigation -->
+                <div class="product-card group relative overflow-hidden rounded-lg opacity-0">
+                    <div class="aspect-[4/5] bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                        style="background-image: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop');">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <h3 class="text-2xl font-display font-bold mb-2">WAYFINDING &<br>NAVIGATION</h3>
+                        <p class="text-sm text-gray-300">Optimize crowd flow and operational efficiency on matchdays</p>
+                    </div>
+                </div>
+
+                <!-- Product 8: Room & Door Information -->
+                <div class="product-card group relative overflow-hidden rounded-lg opacity-0">
+                    <div class="aspect-[4/5] bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                        style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop');">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <h3 class="text-2xl font-display font-bold mb-2">ROOM & DOOR<br>INFORMATION</h3>
+                        <p class="text-sm text-gray-300">Professional communication for meeting rooms, media zones, and
+                            VIP entrances</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section id="benefits" class="py-32 px-6 relative overflow-hidden">
+            <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-tochi-orange/10 rounded-full blur-[120px]">
+            </div>
+
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2
+                            class="section-title text-5xl md:text-7xl font-display font-bold mb-8 leading-tight opacity-0">
+                            WHY <br>
+                            <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-tochi-blue to-cyan-400">TOCHI?</span>
+                        </h2>
+                        <p class="text-xl text-gray-400 mb-12 max-w-lg">
+                            We don't just install screens. We engineer digital ecosystems that monetize every seat and
+                            amplify fan emotion.
+                        </p>
+
+                        <div class="space-y-8">
+                            <div class="benefit-item flex items-start gap-6 opacity-0">
+                                <div class="text-tochi-orange text-4xl font-display font-bold">01</div>
+                                <div>
+                                    <h4 class="text-xl font-bold mb-2">Memorable Technology-Driven Experience</h4>
+                                    <p class="text-gray-500">Strategic screen placement from entrances to lounges
+                                        creates an
+                                        unforgettable journey</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item flex items-start gap-6 opacity-0">
+                                <div class="text-tochi-blue text-4xl font-display font-bold">02</div>
+                                <div>
+                                    <h4 class="text-xl font-bold mb-2">Real-Time Content Synchronized with Fan
+                                        Applications
+                                    </h4>
+                                    <p class="text-gray-500">Seamlessly integrated with stadium architecture, keeping
+                                        fans
+                                        connected every moment</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item flex items-start gap-6 opacity-0">
+                                <div class="text-tochi-orange text-4xl font-display font-bold">03</div>
+                                <div>
+                                    <h4 class="text-xl font-bold mb-2">Optimized Crowd Flow & Operational Efficiency
+                                    </h4>
+                                    <p class="text-gray-500">Digital guidance systems enhance safety and streamline
+                                        matchday
+                                        operations</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item flex items-start gap-6 opacity-0">
+                                <div class="text-tochi-blue text-4xl font-display font-bold">04</div>
+                                <div>
+                                    <h4 class="text-xl font-bold mb-2">Live Broadcast Integration</h4>
+                                    <p class="text-gray-500">Centrally managed live scores, video content, and sponsor
+                                        messages broadcast in real time</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative h-[600px] w-full">
+                        <div
+                            class="absolute inset-0 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-sm">
+                            <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent"></div>
+                            <div class="w-full h-full flex items-center justify-center">
+                                <div class="relative w-64 h-64">
+                                    <div
+                                        class="absolute inset-0 border-2 border-tochi-blue rounded-full animate-[spin_10s_linear_infinite]">
+                                    </div>
+                                    <div
+                                        class="absolute inset-4 border-2 border-tochi-orange rounded-full animate-[spin_15s_linear_infinite_reverse]">
+                                    </div>
+                                    <div
+                                        class="absolute inset-0 flex items-center justify-center font-display text-4xl font-bold tracking-widest animate-pulse">
+                                        ERPA
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Studies Section -->
+        <section id="cases" class="py-32 px-6 bg-tochi-dark">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="section-title text-5xl md:text-7xl font-display font-bold mb-20 text-center opacity-0">
+                    SUCCESS<br>
+                    <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-tochi-orange to-yellow-400">STORIES</span>
+                </h2>
+
+                <!-- Case 1: Fenerbahçe -->
+                <div class="case-study flex flex-col md:flex-row-reverse gap-12 items-center mb-32">
+                    <div class="w-full md:w-2/3 h-[500px] relative overflow-hidden rounded-lg group">
+                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
+                            style="background-image: url('assets/case_fenerbahce.png');"></div>
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
+                    </div>
+                    <div class="w-full md:w-1/3 space-y-6">
+                        <div class="text-tochi-orange font-display font-bold text-xl">FENERBAHÇE</div>
+                        <h3 class="text-4xl font-bold leading-tight">VIP Seat-Back TOCHI Displays</h3>
+                        <p class="text-gray-400">
+                            For the VIP boxes at Fenerbahçe Şükrü Saracoğlu Stadium, we developed a custom-designed
+                            seat-back display solution, enhancing the fan experience with comfort and innovation.
+                        </p>
+                        <p class="text-gray-400">
+                            Each screen integrated behind the seats provides live broadcasts, match statistics, and
+                            interactive content, giving every guest instant access to dynamic information and
+                            entertainment.
+                        </p>
+                        <p class="text-gray-400">
+                            By merging technology with the passion of the game, this project takes the sports experience
+                            one
+                            step further into the digital era.
+                        </p>
+                        <ul class="space-y-2 text-sm text-gray-500">
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1 h-1 bg-tochi-orange rounded-full"></span>
+                                Personalized Content</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1 h-1 bg-tochi-orange rounded-full"></span>
+                                Instant Replays</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1 h-1 bg-tochi-orange rounded-full"></span>
+                                Live Match Statistics</li>
+                        </ul>
+                        <a href="fenerbahce.html"
+                            class="inline-block mt-4 text-tochi-orange hover:text-white transition-colors">
+                            View Full Case Study →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Case 2: Benghazi -->
+                <div class="case-study flex flex-col md:flex-row gap-12 items-center">
+                    <div class="w-full md:w-2/3 h-[500px] relative overflow-hidden rounded-lg group">
+                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
+                            style="background-image: url('https://images.unsplash.com/photo-1487466365202-1afdb86c764e?q=80&w=2000&auto=format&fit=crop');">
+                        </div>
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
+                    </div>
+                    <div class="w-full md:w-1/3 space-y-6">
+                        <div class="text-tochi-blue font-display font-bold text-xl">LIBYA BENGHAZI STADIUM</div>
+                        <h3 class="text-4xl font-bold leading-tight">Digital Transformation with TOCHI</h3>
+                        <p class="text-gray-400">
+                            Blending the excitement of sports with technology, Benghazi Stadium in Libya has embraced
+                            digital transformation to elevate the fan experience.
+                        </p>
+                        <p class="text-gray-400">
+                            Across the stadium, TOCHI outdoor digital signage displays deliver high visibility and
+                            exceptional durability, allowing visitors to access information instantly, follow live
+                            content,
+                            and enjoy a more immersive viewing experience.
+                        </p>
+                        <p class="text-gray-400">
+                            With TOCHI, matchdays in Benghazi have become more engaging and dynamic — setting a modern
+                            standard for sports venues across the region.
+                        </p>
+                        <ul class="space-y-2 text-sm text-gray-500">
+                            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-tochi-blue rounded-full"></span>
+                                Outdoor Digital Signage</li>
+                            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-tochi-blue rounded-full"></span>
+                                High Visibility & Durability</li>
+                            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-tochi-blue rounded-full"></span>
+                                Immersive Viewing Experience</li>
+                        </ul>
+                        <a href="benghazi.html"
+                            class="inline-block mt-4 text-tochi-blue hover:text-white transition-colors">
+                            View Full Case Study →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="contact" class="h-screen flex items-center justify-center relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-tochi-blue/20 to-transparent"></div>
+
+            <div class="text-center z-10 px-6">
+                <h2 class="text-5xl md:text-8xl font-display font-black mb-8 tracking-tighter">
+                    TRANSFORM<br>YOUR STADIUM
+                </h2>
+                <p class="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">
+                    Ready to elevate the fan experience and maximize revenue?
+                </p>
+                <button id="cta-btn"
+                    class="group relative px-12 py-6 bg-white text-black font-bold text-xl tracking-wider overflow-hidden transition-all hover:scale-105">
+                    <span class="relative z-10 group-hover:text-white transition-colors duration-300">GET STARTED</span>
+                    <div
+                        class="absolute inset-0 bg-tochi-blue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left">
+                    </div>
+                </button>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-12 px-6 border-t border-white/10 bg-black">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="text-2xl font-display font-bold">TOCHI <span
+                        class="text-xs font-sans font-normal text-gray-500 block">by ERPA TEKNOLOJİ | since 1995</span>
+                </div>
+                <div class="text-gray-500 text-sm text-center">
+                    Your Trusted Partner in Professional Display Solutions<br>
+                    Recognized among Turkey's Top 500 IT Companies
+                </div>
+                <div class="text-gray-500 text-sm">
+                    &copy; 2025 ERPA Teknoloji. All rights reserved.
+                </div>
+                <div class="flex gap-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Instagram</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">LinkedIn</a>
+                    <a href="https://www.erpateknoloji.com/" target="_blank"
+                        class="text-gray-400 hover:text-white transition-colors">Website</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Easter Egg Container -->
+        <div id="easter-egg-container" class="fixed inset-0 pointer-events-none z-[100] hidden">
+            <canvas id="confetti-canvas" class="absolute inset-0 w-full h-full"></canvas>
+            <div class="absolute inset-0 flex items-center justify-center">
+                <h1 class="text-9xl font-display font-black text-transparent bg-clip-text bg-gradient-to-r from-tochi-blue to-tochi-orange animate-pulse opacity-0 scale-50"
+                    id="easter-egg-text">GOAL!</h1>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        <script src="https://unpkg.com/@studio-freight/lenis@1.0.29/dist/lenis.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
