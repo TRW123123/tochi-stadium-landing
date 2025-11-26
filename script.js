@@ -270,3 +270,44 @@ document.querySelectorAll('[data-countup]').forEach(element => {
         }
     });
 });
+
+// World Map Initialization
+if (document.getElementById('world-map')) {
+    const map = L.map('world-map', {
+        center: [35, 25], // Centered on Mediterranean
+        zoom: 3,
+        scrollWheelZoom: false,
+        zoomControl: false,
+        attributionControl: false
+    });
+
+    // Dark theme tiles (CartoDB Dark Matter)
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        subdomains: 'abcd',
+        maxZoom: 19
+    }).addTo(map);
+
+    // Custom Icon
+    const erpaIcon = L.divIcon({
+        className: 'custom-div-icon',
+        html: "<div style='background-color: #E31E24; width: 12px; height: 12px; border-radius: 50%; border: 2px solid white; box-shadow: 0 0 10px #E31E24;'></div>",
+        iconSize: [12, 12],
+        iconAnchor: [6, 6]
+    });
+
+    // Locations
+    const locations = [
+        { name: "Istanbul HQ", coords: [41.0082, 28.9784] },
+        { name: "Benghazi Stadium", coords: [32.1166, 20.0667] },
+        { name: "Berlin Office", coords: [52.5200, 13.4050] },
+        { name: "Dubai Partner", coords: [25.2048, 55.2708] },
+        { name: "London Hub", coords: [51.5074, -0.1278] }
+    ];
+
+    locations.forEach(loc => {
+        L.marker(loc.coords, { icon: erpaIcon })
+            .addTo(map)
+            .bindPopup(`<b style="color: #0A1930">${loc.name}</b>`);
+    });
+}
