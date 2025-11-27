@@ -1,338 +1,343 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TOCHI | Stadium Solutions by ERPA Teknoloji</title>
-    <meta name="description"
-        content="Transform your stadium into a digital experience center. TOCHI by ERPA Teknoloji - Professional display solutions since 1995.">
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'erpa-red': '#E31E24',
-                        'erpa-navy': '#0A1930',
-                        'tochi-blue': '#0055FF',
-                        'dark-gray': '#212529',
-                        'medium-gray': '#6C757D',
-                        'light-gray': '#F8F9FA'
-                    },
-                    fontFamily: {
-                        sans: ['Poppins', 'sans-serif'],
-                        display: ['Poppins', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        body {
-            background-color: #0A1930;
-            /* Fallback for Tailwind */
-            color: white;
-        }
-
-        .product-card {
-            opacity: 1 !important;
-            transform: scale(1) translateY(0) !important;
-        }
-    </style>
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap"
-        rel="stylesheet">
-
-    <!-- Leaflet -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-
-    <!-- Image Comparison Slider -->
-    TOCHI<br><span
-        class="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400">STADIUM</span>
-    </h1>
-    <p class="hero-subtitle text-xl md:text-2xl text-gray-300 font-light tracking-widest uppercase">
-        Your stadium becomes more than a stadium<br><span class="text-erpa-red">It transforms into a digital
-            experience center</span>
-    </p>
-    <p class="text-sm text-gray-500 mt-4">by ERPA Teknoloji | since 1995</p>
-    </div>
-    <div
-        class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50 animate-bounce">
-        <span class="text-xs tracking-widest">SCROLL</span>
-        <div class="w-[1px] h-12 bg-white"></div>
-    </div>
-    </header>
-
-    <!-- About ERPA Section -->
-    <section class="relative py-32 px-6 bg-dark-gray overflow-hidden">
-        <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-tochi-blue/5 rounded-full blur-[200px]"></div>
-        <div class="max-w-7xl mx-auto relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                <div class="relative h-[600px] rounded-2xl overflow-hidden group">
-                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                        style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop');">
+<div class="max-w-7xl mx-auto relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="relative h-[600px] rounded-2xl overflow-hidden group">
+            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop');">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-erpa-navy via-erpa-navy/50 to-transparent">
+            </div>
+            <div class="absolute bottom-8 left-8 right-8">
+                <div class="text-erpa-red font-display font-bold text-sm mb-2">TRUSTED WORLDWIDE</div>
+                <h3 class="text-3xl font-bold">Professional Display Solutions Since 1995</h3>
+            </div>
+        </div>
+        <div class="space-y-8">
+            <div>
+                <div class="text-erpa-red font-display font-bold text-sm mb-4 tracking-widest">ERPA
+                    TEKNOLOJİ</div>
+                <h2 class="text-5xl md:text-6xl font-display font-bold mb-6 leading-tight">
+                    Your Trusted Partner in <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-tochi-blue to-cyan-400">Professional
+                        Display Solutions</span>
+                </h2>
+                <p class="text-xl text-gray-400 leading-relaxed">
+                    Since 1995, Erpa Technology has been a leading company in the field of industrial and
+                    professional display systems. By establishing Turkey's first screen and printer laboratory,
+                    Erpa introduced the domestically produced brand TOCHI to the market.
+                </p>
+            </div>
+            <div class="grid grid-cols-3 gap-8 py-8 border-t border-b border-white/10">
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-display font-bold text-erpa-red mb-2" data-countup="30">0
                     </div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-erpa-navy via-erpa-navy/50 to-transparent">
-                    </div>
-                    <div class="absolute bottom-8 left-8 right-8">
-                        <div class="text-erpa-red font-display font-bold text-sm mb-2">TRUSTED WORLDWIDE</div>
-                        <h3 class="text-3xl font-bold">Professional Display Solutions Since 1995</h3>
-                    </div>
+                    <div class="text-sm text-gray-500 uppercase tracking-wider">Years</div>
                 </div>
-                <div class="space-y-8">
-                    <div>
-                        <div class="text-erpa-red font-display font-bold text-sm mb-4 tracking-widest">ERPA
-                            TEKNOLOJİ</div>
-                        <h2 class="text-5xl md:text-6xl font-display font-bold mb-6 leading-tight">
-                            Your Trusted Partner in <span
-                                class="text-transparent bg-clip-text bg-gradient-to-r from-tochi-blue to-cyan-400">Professional
-                                Display Solutions</span>
-                        </h2>
-                        <p class="text-xl text-gray-400 leading-relaxed">
-                            Since 1995, Erpa Technology has been a leading company in the field of industrial and
-                            professional display systems. By establishing Turkey's first screen and printer laboratory,
-                            Erpa introduced the domestically produced brand TOCHI to the market.
-                        </p>
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-display font-bold text-tochi-blue mb-2" data-countup="500">0
                     </div>
-                    <div class="grid grid-cols-3 gap-8 py-8 border-t border-b border-white/10">
-                        <div class="text-center">
-                            <div class="text-4xl md:text-5xl font-display font-bold text-erpa-red mb-2"
-                                data-countup="30">0
-                            </div>
-                            <div class="text-sm text-gray-500 uppercase tracking-wider">Years</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-4xl md:text-5xl font-display font-bold text-tochi-blue mb-2"
-                                data-countup="500">0</div>
-                            <div class="text-sm text-gray-500 uppercase tracking-wider">Installations</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-4xl md:text-5xl font-display font-bold text-erpa-red mb-2"
-                                data-countup="50">0
-                            </div>
-                            <div class="text-sm text-gray-500 uppercase tracking-wider">Countries</div>
-                        </div>
+                    <div class="text-sm text-gray-500 uppercase tracking-wider">Installations</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-display font-bold text-erpa-red mb-2" data-countup="50">0
                     </div>
-                    <div class="space-y-4">
-                        <div class="flex items-center gap-4">
-                            <div class="w-2 h-2 bg-tochi-blue rounded-full"></div>
-                            <p class="text-gray-400">Recognized among Turkey's Top 500 IT Companies</p>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div class="w-2 h-2 bg-erpa-red rounded-full"></div>
-                            <p class="text-gray-400">Certified quality standards and experienced team</p>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div class="w-2 h-2 bg-tochi-blue rounded-full"></div>
-                            <p class="text-gray-400">Advanced technological infrastructure</p>
-                        </div>
-                    </div>
+                    <div class="text-sm text-gray-500 uppercase tracking-wider">Countries</div>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <div class="flex items-center gap-4">
+                    <div class="w-2 h-2 bg-tochi-blue rounded-full"></div>
+                    <p class="text-gray-400">Recognized among Turkey's Top 500 IT Companies</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="w-2 h-2 bg-erpa-red rounded-full"></div>
+                    <p class="text-gray-400">Certified quality standards and experienced team</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="w-2 h-2 bg-tochi-blue rounded-full"></div>
+                    <p class="text-gray-400">Advanced technological infrastructure</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</div>
+</section>
 
-    <!-- Products Section -->
-    <section id="products" class="py-32 px-6 bg-erpa-navy relative overflow-hidden">
-        <div class="absolute top-0 left-0 w-[600px] h-[600px] bg-erpa-red/5 rounded-full blur-[150px]"></div>
-        <div class="max-w-7xl mx-auto relative z-10">
-            <h2 class="section-title text-5xl md:text-7xl font-display font-bold mb-4 text-center">TOCHI SOLUTIONS</h2>
-            <p class="text-center text-gray-400 mb-20 max-w-3xl mx-auto text-lg">
-            <div class="absolute top-8 left-8 text-tochi-blue text-6xl font-serif opacity-20">"
+<!-- Products Section -->
+<section id="products" class="py-32 px-6 bg-erpa-navy relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-[600px] h-[600px] bg-erpa-red/5 rounded-full blur-[150px]"></div>
+    <div class="max-w-7xl mx-auto relative z-10">
+        <h2 class="section-title text-5xl md:text-7xl font-display font-bold mb-4 text-center">TOCHI SOLUTIONS</h2>
+        <p class="text-center text-gray-400 mb-20 max-w-3xl mx-auto text-lg">
+        <div class="absolute top-8 left-8 text-tochi-blue text-6xl font-serif opacity-20">"
+        </div>
+        <div class="relative z-10">
+            <p class="text-2xl md:text-3xl font-light leading-relaxed mb-8 text-gray-200">
+                "The digital transformation with TOCHI has elevated our stadium to international
+                standards. The outdoor signage withstands our climate perfectly."
+            </p>
+            <div class="flex items-center gap-6">
+                <div
+                    class="w-16 h-16 rounded-full bg-gradient-to-br from-erpa-red to-yellow-400 flex items-center justify-center text-2xl font-bold">
+                    B</div>
+                <div>
+                    <div class="font-bold text-xl">Benghazi Stadium</div>
+                    <div class="text-tochi-blue text-sm">Stadium Director</div>
+                    <div class="text-gray-500 text-xs mt-1">Benghazi, Libya</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="testimonial-slide min-w-full px-4">
+        <div class="bg-gradient-to-br from-dark-gray to-black border border-white/10 rounded-2xl p-12 relative">
+            <div class="absolute top-8 left-8 text-erpa-red text-6xl font-serif opacity-20">"
             </div>
             <div class="relative z-10">
                 <p class="text-2xl md:text-3xl font-light leading-relaxed mb-8 text-gray-200">
-                    "The digital transformation with TOCHI has elevated our stadium to international
-                    standards. The outdoor signage withstands our climate perfectly."
+                    "ERPA's expertise in professional display solutions is unmatched. Their team
+                    delivered excellence at every stage."
                 </p>
                 <div class="flex items-center gap-6">
                     <div
-                        class="w-16 h-16 rounded-full bg-gradient-to-br from-erpa-red to-yellow-400 flex items-center justify-center text-2xl font-bold">
-                        B</div>
+                        class="w-16 h-16 rounded-full bg-gradient-to-br from-tochi-blue to-erpa-red flex items-center justify-center text-2xl font-bold">
+                        E</div>
                     <div>
-                        <div class="font-bold text-xl">Benghazi Stadium</div>
-                        <div class="text-tochi-blue text-sm">Stadium Director</div>
-                        <div class="text-gray-500 text-xs mt-1">Benghazi, Libya</div>
+                        <div class="font-bold text-xl">European Football Club</div>
+                        <div class="text-erpa-red text-sm">Head of Hospitality</div>
+                        <div class="text-gray-500 text-xs mt-1">Confidential Client</div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
+    </div>
+    </div>
+    </div>
 
-        <div class="testimonial-slide min-w-full px-4">
-            <div class="bg-gradient-to-br from-dark-gray to-black border border-white/10 rounded-2xl p-12 relative">
-                <div class="absolute top-8 left-8 text-erpa-red text-6xl font-serif opacity-20">"
+    <div class="flex justify-center gap-3 mt-12">
+        <button onclick="goToTestimonial(0)"
+            class="testimonial-dot w-3 h-3 rounded-full bg-erpa-red transition-all duration-300"></button>
+        <button onclick="goToTestimonial(1)"
+            class="testimonial-dot w-3 h-3 rounded-full bg-white/20 hover:bg-white/40 transition-all duration-300"></button>
+        <button onclick="goToTestimonial(2)"
+            class="testimonial-dot w-3 h-3 rounded-full bg-white/20 hover:bg-white/40 transition-all duration-300"></button>
+    </div>
+    </div>
+    </div>
+</section>
+
+<!-- Video Testimonials Section -->
+<section class="py-32 px-6 bg-erpa-navy relative overflow-hidden border-t border-white/5">
+    <div class="max-w-7xl mx-auto relative z-10">
+        <h2 class="section-title text-4xl md:text-6xl font-display font-bold mb-16 text-center">
+            EXECUTIVE <span class="text-erpa-red">INSIGHTS</span>
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Video 1 -->
+            <div
+                class="group relative rounded-2xl overflow-hidden border border-white/10 bg-dark-gray shadow-2xl transition-transform duration-300 hover:-translate-y-2">
+                <div class="aspect-video w-full">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
-                <div class="relative z-10">
-                    <p class="text-2xl md:text-3xl font-light leading-relaxed mb-8 text-gray-200">
-                        "ERPA's expertise in professional display solutions is unmatched. Their team
-                        delivered excellence at every stage."
-                    </p>
-                    <div class="flex items-center gap-6">
-                        <div
-                            class="w-16 h-16 rounded-full bg-gradient-to-br from-tochi-blue to-erpa-red flex items-center justify-center text-2xl font-bold">
-                            E</div>
-                        <div>
-                            <div class="font-bold text-xl">European Football Club</div>
-                            <div class="text-erpa-red text-sm">Head of Hospitality</div>
-                            <div class="text-gray-500 text-xs mt-1">Confidential Client</div>
-                        </div>
-                    </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-1">Fenerbahçe SK</h3>
+                    <p class="text-sm text-gray-400">Digital Transformation Journey</p>
+                </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div
+                class="group relative rounded-2xl overflow-hidden border border-white/10 bg-dark-gray shadow-2xl transition-transform duration-300 hover:-translate-y-2">
+                <div class="aspect-video w-full">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-1">Benghazi Stadium</h3>
+                    <p class="text-sm text-gray-400">Installation Timelapse</p>
+                </div>
+            </div>
+
+            <!-- Video 3 -->
+            <div
+                class="group relative rounded-2xl overflow-hidden border border-white/10 bg-dark-gray shadow-2xl transition-transform duration-300 hover:-translate-y-2">
+                <div class="aspect-video w-full">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-1">CEO Interview</h3>
+                    <p class="text-sm text-gray-400">The Future of Fan Engagement</p>
                 </div>
             </div>
         </div>
-        </div>
+    </div>
+</section>
+
+<!-- Global Presence Section -->
+<section class="py-32 px-6 bg-dark-gray relative overflow-hidden">
+    <div class="max-w-7xl mx-auto relative z-10">
+        <h2 class="section-title text-4xl md:text-6xl font-display font-bold mb-16 text-center">
+            GLOBAL <span class="text-tochi-blue">PRESENCE</span>
+        </h2>
+
+        <div id="world-map"
+            class="w-full h-[600px] rounded-2xl overflow-hidden border border-white/10 shadow-2xl z-10 relative">
         </div>
 
-        <div class="flex justify-center gap-3 mt-12">
-            <button onclick="goToTestimonial(0)"
-                class="testimonial-dot w-3 h-3 rounded-full bg-erpa-red transition-all duration-300"></button>
-            <button onclick="goToTestimonial(1)"
-                class="testimonial-dot w-3 h-3 rounded-full bg-white/20 hover:bg-white/40 transition-all duration-300"></button>
-            <button onclick="goToTestimonial(2)"
-                class="testimonial-dot w-3 h-3 rounded-full bg-white/20 hover:bg-white/40 transition-all duration-300"></button>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12">
+            <div class="text-center">
+                <div class="text-3xl font-bold text-white mb-1">Istanbul</div>
+                <div class="text-sm text-gray-500">Headquarters</div>
+            </div>
+            <div class="text-center">
+                <div class="text-3xl font-bold text-white mb-1">Benghazi</div>
+                <div class="text-sm text-gray-500">Major Installation</div>
+            </div>
+            <div class="text-center">
+                <div class="text-3xl font-bold text-white mb-1">Europe</div>
+                <div class="text-sm text-gray-500">Expanding Market</div>
+            </div>
+            <div class="text-center">
+                <div class="text-3xl font-bold text-white mb-1">Middle East</div>
+                <div class="text-sm text-gray-500">Strategic Partners</div>
+            </div>
         </div>
-        </div>
-        </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Video Testimonials Section -->
-    <section class="py-32 px-6 bg-erpa-navy relative overflow-hidden border-t border-white/5">
-        <div class="max-w-7xl mx-auto relative z-10">
-            <h2 class="section-title text-4xl md:text-6xl font-display font-bold mb-16 text-center">
-                EXECUTIVE <span class="text-erpa-red">INSIGHTS</span>
-            </h2>
+<!-- Video Testimonials Section -->
+<section class="py-32 px-6 bg-erpa-navy relative overflow-hidden border-t border-white/5">
+    <div class="max-w-7xl mx-auto relative z-10">
+        <h2 class="section-title text-4xl md:text-6xl font-display font-bold mb-16 text-center">
+            EXECUTIVE <span class="text-erpa-red">INSIGHTS</span>
+        </h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Video 1 -->
-                <div
-                    class="group relative rounded-2xl overflow-hidden border border-white/10 bg-dark-gray shadow-2xl transition-transform duration-300 hover:-translate-y-2">
-                    <div class="aspect-video w-full">
-                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-1">Fenerbahçe SK</h3>
-                        <p class="text-sm text-gray-400">Digital Transformation Journey</p>
-                    </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Video 1 -->
+            <div
+                class="group relative rounded-2xl overflow-hidden border border-white/10 bg-dark-gray shadow-2xl transition-transform duration-300 hover:-translate-y-2">
+                <div class="aspect-video w-full">
+                    <iframe class="w-full h-full"
+                        srcdoc="<style>body{background:#000;margin:0;display:flex;align-items:center;justify-content:center}a{display:block;width:100%;height:100%;text-decoration:none}img{width:100%;height:100%;object-fit:cover}svg{width:68px;height:48px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);fill:#f00}</style><a href='https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1'><img src='https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg'><svg viewBox='0 0 68 48'><path d='M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z'/><path d='M45 24 27 14v20' fill='#fff'/></svg></a>"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
-
-                <!-- Video 2 -->
-                <div
-                    class="group relative rounded-2xl overflow-hidden border border-white/10 bg-dark-gray shadow-2xl transition-transform duration-300 hover:-translate-y-2">
-                    <div class="aspect-video w-full">
-                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-1">Benghazi Stadium</h3>
-                        <p class="text-sm text-gray-400">Installation Timelapse</p>
-                    </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-1">Fenerbahçe SK</h3>
+                    <p class="text-sm text-gray-400">Digital Transformation Journey</p>
                 </div>
+            </div>
 
-                <!-- Video 3 -->
-                <div
-                    class="group relative rounded-2xl overflow-hidden border border-white/10 bg-dark-gray shadow-2xl transition-transform duration-300 hover:-translate-y-2">
-                    <div class="aspect-video w-full">
-                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-1">CEO Interview</h3>
-                        <p class="text-sm text-gray-400">The Future of Fan Engagement</p>
-                    </div>
+            <!-- Video 2 -->
+            <div
+                class="group relative rounded-2xl overflow-hidden border border-white/10 bg-dark-gray shadow-2xl transition-transform duration-300 hover:-translate-y-2">
+                <div class="aspect-video w-full">
+                    <iframe class="w-full h-full"
+                        srcdoc="<style>body{background:#000;margin:0;display:flex;align-items:center;justify-content:center}a{display:block;width:100%;height:100%;text-decoration:none}img{width:100%;height:100%;object-fit:cover}svg{width:68px;height:48px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);fill:#f00}</style><a href='https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1'><img src='https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg'><svg viewBox='0 0 68 48'><path d='M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z'/><path d='M45 24 27 14v20' fill='#fff'/></svg></a>"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-1">Benghazi Stadium</h3>
+                    <p class="text-sm text-gray-400">Installation Timelapse</p>
+                </div>
+            </div>
+
+            <!-- Video 3 -->
+            <div
+                class="group relative rounded-2xl overflow-hidden border border-white/10 bg-dark-gray shadow-2xl transition-transform duration-300 hover:-translate-y-2">
+                <div class="aspect-video w-full">
+                    <iframe class="w-full h-full"
+                        srcdoc="<style>body{background:#000;margin:0;display:flex;align-items:center;justify-content:center}a{display:block;width:100%;height:100%;text-decoration:none}img{width:100%;height:100%;object-fit:cover}svg{width:68px;height:48px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);fill:#f00}</style><a href='https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1'><img src='https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg'><svg viewBox='0 0 68 48'><path d='M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z'/><path d='M45 24 27 14v20' fill='#fff'/></svg></a>"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-1">CEO Interview</h3>
+                    <p class="text-sm text-gray-400">The Future of Fan Engagement</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Global Presence Section -->
-    <section class="py-32 px-6 bg-dark-gray relative overflow-hidden">
-        <div class="max-w-7xl mx-auto relative z-10">
-            <h2 class="section-title text-4xl md:text-6xl font-display font-bold mb-16 text-center">
-                GLOBAL <span class="text-tochi-blue">PRESENCE</span>
-            </h2>
-
-            <div id="world-map"
-                class="w-full h-[600px] rounded-2xl overflow-hidden border border-white/10 shadow-2xl z-10 relative">
+<!-- CTA Section -->
+<section id="contact" class="h-screen flex items-center justify-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-t from-tochi-blue/20 to-transparent"></div>
+    <div class="text-center z-10 px-6">
+        <h2 class="text-5xl md:text-8xl font-display font-black mb-8 tracking-tighter">TRANSFORM<br>YOUR STADIUM
+        </h2>
+        <p class="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">Ready to elevate the fan experience and
+            maximize
+            revenue?</p>
+        <button id="cta-btn"
+            class="group relative px-12 py-6 bg-white text-black font-bold text-xl tracking-wider overflow-hidden transition-all hover:scale-105">
+            <span class="relative z-10 group-hover:text-white transition-colors duration-300">GET STARTED</span>
+            <div
+                class="absolute inset-0 bg-tochi-blue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left">
             </div>
+        </button>
+    </div>
+</section>
 
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12">
-                <div class="text-center">
-                    <div class="text-3xl font-bold text-white mb-1">Istanbul</div>
-                    <div class="text-sm text-gray-500">Headquarters</div>
-                </div>
-                <div class="text-center">
-                    <div class="text-3xl font-bold text-white mb-1">Benghazi</div>
-                    <div class="text-sm text-gray-500">Major Installation</div>
-                </div>
-                <div class="text-center">
-                    <div class="text-3xl font-bold text-white mb-1">Europe</div>
-                    <div class="text-sm text-gray-500">Expanding Market</div>
-                </div>
-                <div class="text-center">
-                    <div class="text-3xl font-bold text-white mb-1">Middle East</div>
-                    <div class="text-sm text-gray-500">Strategic Partners</div>
-                </div>
-            </div>
+<!-- Footer -->
+<footer class="py-12 px-6 border-t border-white/10 bg-black">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="text-2xl font-display font-bold">TOCHI <span
+                class="text-xs font-sans font-normal text-gray-500 block">by ERPA TEKNOLOJİ | since 1995</span>
         </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section id="contact" class="h-screen flex items-center justify-center relative overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-t from-tochi-blue/20 to-transparent"></div>
-        <div class="text-center z-10 px-6">
-            <h2 class="text-5xl md:text-8xl font-display font-black mb-8 tracking-tighter">TRANSFORM<br>YOUR STADIUM
-            </h2>
-            <p class="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">Ready to elevate the fan experience and
-                maximize
-                revenue?</p>
-            <button id="cta-btn"
-                class="group relative px-12 py-6 bg-white text-black font-bold text-xl tracking-wider overflow-hidden transition-all hover:scale-105">
-                <span class="relative z-10 group-hover:text-white transition-colors duration-300">GET STARTED</span>
-                <div
-                    class="absolute inset-0 bg-tochi-blue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left">
-                </div>
-            </button>
+        <div class="text-gray-500 text-sm text-center">
+            Your Trusted Partner in Professional Display Solutions<br>Recognized among Turkey's Top 500 IT
+            Companies
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-12 px-6 border-t border-white/10 bg-black">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-            <div class="text-2xl font-display font-bold">TOCHI <span
-                    class="text-xs font-sans font-normal text-gray-500 block">by ERPA TEKNOLOJİ | since 1995</span>
-            </div>
-            <div class="text-gray-500 text-sm text-center">
-                Your Trusted Partner in Professional Display Solutions<br>Recognized among Turkey's Top 500 IT
-                Companies
-            </div>
-            <div class="text-gray-500 text-sm">&copy; 2025 ERPA Teknoloji. All rights reserved.</div>
-            <div class="flex gap-6">
-                <a href="#" class="text-gray-400 hover:text-white transition-colors">Instagram</a>
-                <a href="#" class="text-gray-400 hover:text-white transition-colors">LinkedIn</a>
-                <a href="https://www.erpateknoloji.com/" target="_blank"
-                    class="text-gray-400 hover:text-white transition-colors">Website</a>
-            </div>
+        <div class="text-gray-500 text-sm">&copy; 2025 ERPA Teknoloji. All rights reserved.</div>
+        <div class="flex gap-6">
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">Instagram</a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">LinkedIn</a>
+            <a href="https://www.erpateknoloji.com/" target="_blank"
+                class="text-gray-400 hover:text-white transition-colors">Website</a>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <!-- Scripts moved to head -->
-    </body>
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu-overlay"
+    class="fixed inset-0 bg-black/95 z-40 transform translate-x-full transition-transform duration-300 md:hidden flex flex-col items-center justify-center space-y-8">
+    <a href="#products"
+        class="text-2xl font-bold text-white hover:text-tochi-blue transition-colors mobile-menu-link">SOLUTIONS</a>
+    <a href="#benefits"
+        class="text-2xl font-bold text-white hover:text-tochi-blue transition-colors mobile-menu-link">BENEFITS</a>
+    <a href="#cases"
+        class="text-2xl font-bold text-white hover:text-tochi-blue transition-colors mobile-menu-link">CASES</a>
+    <a href="fenerbahce.html"
+        class="text-2xl font-bold text-white hover:text-tochi-blue transition-colors mobile-menu-link">FENERBAHÇE</a>
+    <a href="benghazi.html"
+        class="text-2xl font-bold text-white hover:text-tochi-blue transition-colors mobile-menu-link">BENGHAZI</a>
+    <a href="#contact"
+        class="text-2xl font-bold text-white hover:text-tochi-blue transition-colors mobile-menu-link">CONTACT</a>
+    <button
+        class="border border-white/20 px-8 py-3 rounded-full text-lg text-white hover:bg-white hover:text-black transition-all duration-300 mobile-menu-link">
+        GET IN TOUCH
+    </button>
+</div>
+</body>
 
 </html>
