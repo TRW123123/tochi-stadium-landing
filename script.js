@@ -339,4 +339,79 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Language Switcher Logic
+    window.changeLanguage = function (lang) {
+        const t = translations[lang];
+        if (!t) return;
+
+        // Update current language display
+        const currentLangEl = document.getElementById('current-lang');
+        if (currentLangEl) currentLangEl.textContent = lang.toUpperCase();
+
+        // Recursive function to traverse translations
+        function updateText(obj, prefix) {
+            for (const key in obj) {
+                if (typeof obj[key] === 'object') {
+                    updateText(obj[key], prefix ? `${prefix}.${key}` : key);
+                } else {
+                    const element = document.querySelector(`[data-i18n="${prefix ? `${prefix}.${key}` : key}"]`);
+                    if (element) {
+                        if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                            element.placeholder = obj[key];
+                        } else {
+                            element.textContent = obj[key];
+                        }
+                    }
+                }
+            }
+        }
+
+        updateText(t, '');
+
+        // Update HTML lang attribute
+        document.documentElement.lang = lang;
+    };
+
+    // Before/After Slider Logic
+    const slider = document.querySelector('.relative.group.select-none');
+    if (slider) {
+        const overlay = document.getElementById('slider-overlay');
+        const handle = document.getElementById('slider-handle');
+        let isDragging = false;
+
+        const updateSlider = (x) => {
+            const rect = slider.getBoundingClientRect();
+            let percentage = ((x - rect.left) / rect.width) * 100;
+            percentage = Math.max(0, Math.min(100, percentage));
+
+            overlay.style.width = `${percentage}%`;
+            handle.style.left = `${percentage}%`;
+        };
+
+        const startDrag = (e) => {
+            isDragging = true;
+            updateSlider(e.pageX || e.touches[0].pageX);
+        };
+
+        const stopDrag = () => {
+            isDragging = false;
+        };
+
+        const moveDrag = (e) => {
+            if (!isDragging) return;
+            e.preventDefault(); // Prevent scrolling on touch
+            updateSlider(e.pageX || e.touches[0].pageX);
+        };
+
+        // Mouse events
+        slider.addEventListener('mousedown', startDrag);
+        window.addEventListener('mouseup', stopDrag);
+        window.addEventListener('mousemove', moveDrag);
+
+        // Touch events
+        slider.addEventListener('touchstart', startDrag);
+        window.addEventListener('touchend', stopDrag);
+        window.addEventListener('touchmove', moveDrag);
+    }
 });
