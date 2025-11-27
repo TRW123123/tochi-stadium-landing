@@ -102,3 +102,30 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+/* Mobile Menu */
+#mobile-menu {
+    transition: opacity 0.3s ease-in-out;
+}
+
+#mobile-menu.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.mobile-menu-link {
+    transition: color 0.3s, transform 0.3s;
+}
+
+.mobile-menu-link:hover {
+    transform: translateX(10px);
+}
+
+/* Touch Target Optimization */
+@media (max-width: 767px) {
+    .testimonial-dot {
+        width: 44px !important;
+        height: 44px !important;
+        border-radius: 50%;
+    }
+}
