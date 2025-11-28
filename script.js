@@ -342,7 +342,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Language Switcher Logic
     window.changeLanguage = function (lang) {
-        const t = translations[lang];
+        const t = window.translations ? window.translations[lang] : undefined;
         if (!t) return;
 
         // Update current language display
@@ -355,14 +355,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (typeof obj[key] === 'object') {
                     updateText(obj[key], prefix ? `${prefix}.${key}` : key);
                 } else {
-                    const element = document.querySelector(`[data-i18n="${prefix ? `${prefix}.${key}` : key}"]`);
-                    if (element) {
+                    const selector = `[data-i18n="${prefix ? `${prefix}.${key}` : key}"]`;
+                    const elements = document.querySelectorAll(selector);
+                    elements.forEach(element => {
                         if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
                             element.placeholder = obj[key];
                         } else {
                             element.textContent = obj[key];
                         }
-                    }
+                    });
                 }
             }
         }

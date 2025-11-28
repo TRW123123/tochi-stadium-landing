@@ -1,22 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<script src="translations.js"></script>
-<script src="mobile-menu.js" defer></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOCHI - Stadium Solutions</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <script src="translations.js" defer></script>
+    <script src="mobile-menu.js" defer></script>
 </head>
 
-<body class="bg-erpa-navy text-white overflow-x-hidden antialiased selection:bg-tochi-blue selection:text-white">
+<body
+    class="bg-erpa-navy text-white font-sans antialiased overflow-x-hidden selection:bg-erpa-red selection:text-white">
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu-overlay"
+        class="fixed inset-0 bg-erpa-navy/95 z-50 transition-transform duration-300 translate-x-full flex items-center justify-center">
+        <div class="flex flex-col gap-8 text-center">
+            <a href="#solutions"
+                class="mobile-menu-link text-3xl font-display font-bold hover:text-erpa-red transition-colors"
+                data-i18n="nav.solutions">SOLUTIONS</a>
+            <a href="#benefits"
+                class="mobile-menu-link text-3xl font-display font-bold hover:text-erpa-red transition-colors"
+                data-i18n="nav.benefits">BENEFITS</a>
+            <a href="#cases"
+                class="mobile-menu-link text-3xl font-display font-bold hover:text-erpa-red transition-colors"
+                data-i18n="nav.cases">CASES</a>
+            <a href="#contact"
+                class="mobile-menu-link text-3xl font-display font-bold hover:text-erpa-red transition-colors"
+                data-i18n="nav.contact">CONTACT</a>
+        </div>
+    </div>
+
     <header class="relative h-screen w-full overflow-hidden flex items-center justify-center">
         <div class="absolute inset-0 z-0">
             <div id="hero-bg" class="w-full h-full bg-cover bg-center scale-110"
                 style="background-image: url('assets/stadium_hero.webp');" fetchpriority="high"></div>
             <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-erpa-navy"></div>
         </div>
-        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+
+        <!-- Navbar -->
+        <nav
+            class="absolute top-0 left-0 right-0 z-50 px-6 py-6 flex justify-between items-center max-w-7xl mx-auto w-full">
+            <div class="flex items-center gap-2">
+                <div class="text-2xl font-display font-bold tracking-tighter">TOCHI</div>
+            </div>
+
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#solutions" class="text-sm font-medium hover:text-erpa-red transition-colors tracking-wide"
+                    data-i18n="nav.solutions">SOLUTIONS</a>
+                <a href="#benefits" class="text-sm font-medium hover:text-erpa-red transition-colors tracking-wide"
+                    data-i18n="nav.benefits">BENEFITS</a>
+                <a href="#cases" class="text-sm font-medium hover:text-erpa-red transition-colors tracking-wide"
+                    data-i18n="nav.cases">CASES</a>
+                <a href="#contact"
+                    class="px-6 py-2 bg-erpa-red hover:bg-red-600 transition-colors rounded-full text-sm font-bold"
+                    data-i18n="nav.contact">CONTACT</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <div class="hidden md:flex items-center gap-2 text-xs font-bold tracking-widest">
+                    <button onclick="changeLanguage('en')" class="hover:text-erpa-red transition-colors">EN</button>
+                    <span class="text-gray-600">|</span>
+                    <button onclick="changeLanguage('tr')" class="hover:text-erpa-red transition-colors">TR</button>
+                    <span class="text-gray-600">|</span>
+                    <button onclick="changeLanguage('de')" class="hover:text-erpa-red transition-colors">DE</button>
+                </div>
+                <button id="mobile-menu-toggle" class="md:hidden text-white z-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-8 h-8">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <div class="relative z-10 text-center px-4">
             <h1
-                class="hero-title font-display font-black text-6xl md:text-8xl lg:text-9xl tracking-tighter mb-6 leading-none opacity-0">
-                TOCHI<br><span
-                    class="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400">STADIUM</span>
+                class="hero-title text-8xl md:text-[12rem] font-display font-bold leading-none tracking-tighter mb-6 opacity-0">
+                TOCHI
             </h1>
             <p class="hero-subtitle text-xl md:text-2xl text-gray-300 font-light tracking-widest uppercase opacity-0">
                 Your stadium becomes more than a stadium<br><span class="text-erpa-red">It transforms into a digital
@@ -64,7 +128,8 @@
                     <div class="grid grid-cols-3 gap-8 py-8 border-t border-b border-white/10">
                         <div class="text-center">
                             <div class="text-4xl md:text-5xl font-display font-bold text-erpa-red mb-2"
-                                data-countup="30">0</div>
+                                data-countup="30">0
+                            </div>
                             <div class="text-sm text-gray-500 uppercase tracking-wider">Years</div>
                         </div>
                         <div class="text-center">
@@ -74,7 +139,8 @@
                         </div>
                         <div class="text-center">
                             <div class="text-4xl md:text-5xl font-display font-bold text-erpa-red mb-2"
-                                data-countup="50">0</div>
+                                data-countup="50">0
+                            </div>
                             <div class="text-sm text-gray-500 uppercase tracking-wider">Countries</div>
                         </div>
                     </div>
@@ -292,7 +358,8 @@
                 <div class="w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center text-erpa-navy">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M8 9l4-4 4 4m0 6l-4 4-4-4"></path>
+                            d="M8 9l4-4 4 4m0 6l-4 4-4-4">
+                        </path>
                     </svg>
                 </div>
             </div>
@@ -490,25 +557,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script src="script.js"></script>
-    <!-- Mobile Menu Overlay -->
-    <div id="mobile-menu-overlay"
-        class="fixed inset-0 bg-black/95 z-40 transform translate-x-full transition-transform duration-300 md:hidden flex flex-col items-center justify-center space-y-8">
-        <a href="#products"
-            class="text-2xl font-bold text-white hover:text-tochi-blue transition-colors mobile-menu-link">SOLUTIONS</a>
-        <a href="#benefits"
-            class="text-2xl font-bold text-white hover:text-tochi-blue transition-colors mobile-menu-link">BENEFITS</a>
-        <a href="#cases"
-            class="text-2xl font-bold text-white hover:text-tochi-blue transition-colors mobile-menu-link">CASES</a>
-        <a href="fenerbahce.html"
-            class="text-2xl font-bold text-white hover:text-tochi-blue transition-colors mobile-menu-link">FENERBAHÇE</a>
-        <a href="benghazi.html"
-            class="text-2xl font-bold text-white hover:text-tochi-blue transition-colors mobile-menu-link">BENGHAZI</a>
-        <a href="#contact"
-            class="text-2xl font-bold text-white hover:text-tochi-blue transition-colors mobile-menu-link">CONTACT</a>
-        <button
-            class="border border-white/20 px-8 py-3 rounded-full text-lg text-white hover:bg-white hover:text-black transition-all duration-300 mobile-menu-link">GET
-            IN TOUCH</button>
-    </div>
 </body>
 
 </html>

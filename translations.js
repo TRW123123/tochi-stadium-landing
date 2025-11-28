@@ -1,4 +1,4 @@
-const translations = {
+window.translations = {
     en: {
         nav: {
             solutions: "SOLUTIONS",
@@ -234,6 +234,241 @@ const translations = {
             kf3Title: "DURABLE",
             kf3Desc: "Built to withstand harsh outdoor conditions",
             quote: "With TOCHI, matchdays in Benghazi have become more engaging and dynamic — setting a modern standard for sports venues across the region."
+        }
+    },
+    tr: {
+        nav: {
+            solutions: "ÇÖZÜMLER",
+            benefits: "AVANTAJLAR",
+            cases: "BAŞARI HİKAYELERİ",
+            fenerbahce: "FENERBAHÇE",
+            benghazi: "BİNGAZİ",
+            contact: "İLETİŞİM",
+            getInTouch: "BİZE ULAŞIN"
+        },
+        hero: {
+            title: "TOCHI",
+            subtitle: "STADYUM",
+            description: "Stadyumunuz bir stadyumdan fazlası olsun",
+            descriptionHighlight: "Dijital bir deneyim merkezine dönüşsün",
+            scroll: "KAYDIR"
+        },
+        about: {
+            trusted: "DÜNYA ÇAPINDA GÜVENİLİR",
+            displaySolutions: "1995'ten Beri Profesyonel Görüntüleme Çözümleri",
+            erpa: "ERPA TEKNOLOJİ",
+            partnerTitle: "Güvenilir İş Ortağınız",
+            partnerHighlight: "Profesyonel Görüntüleme Çözümleri",
+            description: "1995 yılından bu yana Erpa Teknoloji, endüstriyel ve profesyonel görüntüleme sistemleri alanında lider bir firmadır. Türkiye'nin ilk ekran ve yazıcı laboratuvarını kurarak, yerli üretim TOCHI markasını pazara sunmuştur.",
+            years: "Yıl",
+            installations: "Kurulum",
+            countries: "Ülke",
+            top500: "Türkiye'nin İlk 500 Bilişim Şirketi Arasında",
+            quality: "Sertifikalı kalite standartları ve deneyimli ekip",
+            tech: "Gelişmiş teknolojik altyapı"
+        },
+        products: {
+            title: "TOCHI ÇÖZÜMLERİ",
+            description: "Her alan için özel olarak tasarlanmış görüntüleme teknolojileri, tüm taraftarlar için unutulmaz bir maç günü deneyimi sunar.",
+            lockerRoom: {
+                title: "SOYUNMA ODASI EKRANLARI",
+                desc: "Kişiselleştirilmiş içerik ve takım motivasyonu sağlayan bireysel oyuncu ekranları"
+            },
+            vipSeat: {
+                title: "VIP KOLTUK ARKASI EKRANLAR",
+                desc: "Canlı yayın, istatistik ve etkileşimli içerik sunan dokunmatik ekranlar"
+            },
+            videoWall: {
+                title: "VIDEOWALL SİSTEMLERİ",
+                desc: "Taraftarları tek bir ekranda birleştiren yüksek çözünürlüklü modüler ekranlar"
+            },
+            digitalSignage: {
+                title: "DİJİTAL TABELA",
+                desc: "Yüksek parlaklık ve olağanüstü dayanıklılığa sahip iç ve dış mekan ekranları"
+            },
+            totems: {
+                title: "İNTERAKTİF TOTEMLER",
+                desc: "Ziyaretçiler için hızlı erişim — biletler, navigasyon ve etkinlik bilgileri"
+            },
+            menuBoards: {
+                title: "DİJİTAL MENÜ PANOLARI",
+                desc: "VIP alanları ve restoranlar için dinamik menü içeriği ve tanıtım görselleri"
+            },
+            wayfinding: {
+                title: "YÖNLENDİRME & NAVİGASYON",
+                desc: "Maç günlerinde kalabalık akışını ve operasyonel verimliliği optimize edin"
+            },
+            roomInfo: {
+                title: "ODA & KAPI BİLGİLENDİRME",
+                desc: "Toplantı odaları, medya alanları ve VIP girişleri için profesyonel iletişim"
+            }
+        },
+        benefits: {
+            title: "NEDEN",
+            titleHighlight: "TOCHI?",
+            description: "Sadece ekran kurmuyoruz. Her koltuğu gelire dönüştüren ve taraftar coşkusunu artıran dijital ekosistemler tasarlıyoruz.",
+            b1: {
+                title: "Unutulmaz Teknoloji Odaklı Deneyim",
+                desc: "Girişlerden salonlara kadar stratejik ekran yerleşimi unutulmaz bir yolculuk yaratır"
+            },
+            b2: {
+                title: "Taraftar Uygulamalarıyla Senkronize Gerçek Zamanlı İçerik",
+                desc: "Stadyum mimarisiyle sorunsuz bir şekilde entegre edilerek taraftarları her an bağlı tutar"
+            },
+            b3: {
+                title: "Optimize Edilmiş Kalabalık Akışı & Operasyonel Verimlilik",
+                desc: "Dijital yönlendirme sistemleri güvenliği artırır ve maç günü operasyonlarını kolaylaştırır"
+            },
+            b4: {
+                title: "Canlı Yayın Entegrasyonu",
+                desc: "Merkezi olarak yönetilen canlı skorlar, video içeriği ve sponsor mesajları gerçek zamanlı olarak yayınlanır"
+            }
+        },
+        cases: {
+            title: "BAŞARI",
+            titleHighlight: "HİKAYELERİ",
+            fenerbahce: {
+                title: "FENERBAHÇE",
+                subtitle: "VIP Koltuk Arkası TOCHI Ekranları",
+                desc1: "Fenerbahçe Şükrü Saracoğlu Stadyumu'ndaki VIP locaları için, taraftar deneyimini konfor ve yenilikle geliştiren özel tasarım koltuk arkası ekran çözümü geliştirdik.",
+                desc2: "Koltukların arkasına entegre edilen her ekran, canlı yayınlar, maç istatistikleri ve etkileşimli içerik sunarak her misafire dinamik bilgilere ve eğlenceye anında erişim sağlar.",
+                feature1: "Kişiselleştirilmiş İçerik",
+                feature2: "Anında Tekrarlar",
+                feature3: "Canlı Maç İstatistikleri",
+                link: "Tam Vaka Analizini Görüntüle →"
+            },
+            benghazi: {
+                title: "LİBYA BİNGAZİ STADYUMU",
+                subtitle: "TOCHI ile Dijital Dönüşüm",
+                desc1: "Sporun heyecanını teknolojiyle harmanlayan Libya'daki Bingazi Stadyumu, taraftar deneyimini yükseltmek için dijital dönüşümü benimsedi.",
+                desc2: "Stadyum genelinde, TOCHI dış mekan dijital tabela ekranları yüksek görünürlük ve olağanüstü dayanıklılık sunarak ziyaretçilerin bilgilere anında erişmesini sağlar.",
+                feature1: "Dış Mekan Dijital Tabela",
+                feature2: "Yüksek Görünürlük & Dayanıklılık",
+                feature3: "Sürükleyici İzleme Deneyimi",
+                link: "Tam Vaka Analizini Görüntüle →"
+            }
+        },
+        transform: {
+            title: "STADYUMUNUZU",
+            titleHighlight: "DÖNÜŞTÜRÜN",
+            drag: "Farkı görmek için kaydırıcıyı sürükleyin"
+        },
+        testimonials: {
+            title: "MÜŞTERİ",
+            titleHighlight: "YORUMLARI",
+            description: "Stadyumlarını TOCHI ile dönüştüren liderlerden dinleyin",
+            t1: {
+                quote: "TOCHI'nin VIP koltuk arkası ekranları, premium ağırlama deneyimimizde devrim yarattı. VIP misafirlerimiz artık koltuklarından kişiselleştirilmiş içerik, canlı istatistikler ve anında tekrarların keyfini çıkarıyor.",
+                role: "Stadyum Operasyonları Müdürü",
+                location: "Şükrü Saracoğlu Stadyumu"
+            },
+            t2: {
+                quote: "TOCHI ile dijital dönüşüm, stadyumumuzu uluslararası standartlara taşıdı. Dış mekan tabelaları iklimimize mükemmel şekilde dayanıyor.",
+                role: "Stadyum Direktörü",
+                location: "Bingazi, Libya"
+            },
+            t3: {
+                quote: "ERPA'nın profesyonel görüntüleme çözümlerindeki uzmanlığı benzersiz. Ekipleri her aşamada mükemmellik sundu.",
+                role: "Ağırlama Müdürü",
+                location: "Gizli Müşteri"
+            }
+        },
+        videos: {
+            title: "YÖNETİCİ",
+            titleHighlight: "GÖRÜŞLERİ",
+            v1: {
+                title: "Fenerbahçe SK",
+                desc: "Dijital Dönüşüm Yolculuğu"
+            },
+            v2: {
+                title: "Bingazi Stadyumu",
+                desc: "Kurulum Hızlandırılmış Çekim"
+            },
+            v3: {
+                title: "CEO Röportajı",
+                desc: "Taraftar Etkileşiminin Geleceği"
+            }
+        },
+        global: {
+            title: "KÜRESEL",
+            titleHighlight: "VARLIK",
+            istanbul: {
+                title: "İstanbul",
+                desc: "Genel Merkez"
+            },
+            benghazi: {
+                title: "Bingazi",
+                desc: "Büyük Kurulum"
+            },
+            europe: {
+                title: "Avrupa",
+                desc: "Genişleyen Pazar"
+            },
+            middleEast: {
+                title: "Orta Doğu",
+                desc: "Stratejik Ortaklar"
+            }
+        },
+        cta: {
+            title: "STADYUMUNUZU DÖNÜŞTÜRÜN",
+            description: "Taraftar deneyimini yükseltmeye ve geliri maksimize etmeye hazır mısınız?",
+            button: "BAŞLAYIN"
+        },
+        footer: {
+            by: "ERPA TEKNOLOJİ tarafından | 1995'ten beri",
+            desc: "Profesyonel Görüntüleme Çözümlerinde Güvenilir Ortağınız\nTürkiye'nin İlk 500 Bilişim Şirketi Arasında Tanınmaktadır",
+            rights: "© 2025 ERPA Teknoloji. Tüm hakları saklıdır.",
+            website: "Web Sitesi"
+        },
+        fenerbahcePage: {
+            heroTitle: "FENERBAHÇE",
+            heroSubtitle: "VIP Koltuk Arkası TOCHI Ekranları",
+            overviewTitle: "PROJE GENEL BAKIŞ",
+            customTitle: "Özel Tasarım Koltuk Arkası Çözümü",
+            customDesc1: "Fenerbahçe Şükrü Saracoğlu Stadyumu'ndaki VIP locaları için, taraftar deneyimini konfor ve yenilikle geliştiren özel tasarım koltuk arkası ekran çözümü geliştirdik.",
+            customDesc2: "Koltukların arkasına entegre edilen her ekran, canlı yayınlar, maç istatistikleri ve etkileşimli içerik sunarak her misafire dinamik bilgilere ve eğlenceye anında erişim sağlar.",
+            customDesc3: "Teknolojiyi oyunun tutkusuyla birleştiren bu proje, spor deneyimini dijital çağa bir adım daha taşıyor.",
+            feat1Title: "Canlı Maç Yayını",
+            feat1Desc: "Maçın heyecanını gerçek zamanlı olarak, hatta VIP koltuğunuzdan takip edin",
+            feat2Title: "Gerçek Zamanlı İstatistikler",
+            feat2Desc: "Oyuncu istatistiklerine, takım performansına ve maç analizlerine anında erişin",
+            feat3Title: "İnteraktif İçerik",
+            feat3Desc: "Özel içerik, tekrarlar ve kişiselleştirilmiş görüntüleme seçenekleriyle etkileşime geçin",
+            feat4Title: "Premium Ağırlama Deneyimi",
+            feat4Desc: "Konfor, VIP salonlarında, localarda ve özel ağırlama alanlarında teknolojiyle buluşuyor",
+            keyFeatures: "Temel Özellikler",
+            kf1Title: "DOKUNMATİK",
+            kf1Desc: "Sezgisel etkileşim için dokunmatik ekranlar",
+            kf2Title: "CANLI",
+            kf2Desc: "Maç olaylarıyla senkronize gerçek zamanlı içerik",
+            kf3Title: "VIP",
+            kf3Desc: "Premium misafirler için özel içerik",
+            quote: "Teknolojiyi oyunun tutkusuyla birleştiren bu proje, spor deneyimini dijital çağa bir adım daha taşıyor."
+        },
+        benghaziPage: {
+            heroTitle: "BİNGAZİ STADYUMU",
+            heroSubtitle: "TOCHI ile Dijital Dönüşüm",
+            overviewTitle: "PROJE GENEL BAKIŞ",
+            customTitle: "Spor ve Teknolojiyi Harmanlamak",
+            customDesc1: "Sporun heyecanını teknolojiyle harmanlayan Libya'daki Bingazi Stadyumu, taraftar deneyimini yükseltmek için dijital dönüşümü benimsedi.",
+            customDesc2: "Stadyum genelinde, TOCHI dış mekan dijital tabela ekranları yüksek görünürlük ve olağanüstü dayanıklılık sunarak ziyaretçilerin bilgilere anında erişmesini, canlı içeriği takip etmesini ve daha sürükleyici bir izleme deneyiminin keyfini çıkarmasını sağlar.",
+            customDesc3: "TOCHI ile Bingazi'deki maç günleri daha ilgi çekici ve dinamik hale geldi — bölgedeki spor mekanları için modern bir standart belirledi.",
+            feat1Title: "Dış Mekan Dijital Tabela",
+            feat1Desc: "Olağanüstü dayanıklılığa sahip dış mekan koşulları için tasarlanmış yüksek parlaklıklı ekranlar",
+            feat2Title: "Yüksek Görünürlük",
+            feat2Desc: "Doğrudan güneş ışığında ve zorlu hava koşullarında bile kristal netliğinde içerik sunumu",
+            feat3Title: "Canlı İçerik Entegrasyonu",
+            feat3Desc: "Gerçek zamanlı maç bilgileri, skorlar ve sponsor içeriği mekan genelinde yayınlanır",
+            feat4Title: "Sürükleyici İzleme Deneyimi",
+            feat4Desc: "Stratejik olarak yerleştirilmiş dijital ekranlarla geliştirilmiş taraftar etkileşimi",
+            impactTitle: "Etki & Sonuçlar",
+            kf1Title: "MODERN",
+            kf1Desc: "Bölgesel spor mekanları için yeni bir standart belirliyor",
+            kf2Title: "İLGİ ÇEKİCİ",
+            kf2Desc: "Daha dinamik ve etkileşimli maç günü deneyimleri",
+            kf3Title: "DAYANIKLI",
+            kf3Desc: "Zorlu dış mekan koşullarına dayanacak şekilde üretildi",
+            quote: "TOCHI ile Bingazi'deki maç günleri daha ilgi çekici ve dinamik hale geldi — bölgedeki spor mekanları için modern bir standart belirledi."
         }
     },
     de: {
